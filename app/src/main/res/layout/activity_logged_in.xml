@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loggedInVy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#E1DADA"
+    tools:context=".LoggedInActivity">
+
+    <TextView
+        android:id="@+id/tv_greeting"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="56dp"
+        android:text="Hello!"
+        android:textColor="#100F0F"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_teams"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_goBackArrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_TeamsStar"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_Chelsea"
+        app:layout_constraintEnd_toStartOf="@+id/tv_teams"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_goBackArrow"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/tv_teams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="244dp"
+        android:layout_marginBottom="26dp"
+        android:text="Teams"
+        android:textColor="#0B0A0A"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_Arsenal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_TeamsStar" />
+
+    <TextView
+        android:id="@+id/tv_time18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:text="18:00"
+        android:textColor="#090808"
+        app:layout_constraintBottom_toTopOf="@+id/tv_Chelsea"
+        app:layout_constraintStart_toStartOf="@+id/iv_TeamsStar"
+        app:layout_constraintTop_toTopOf="@+id/tv_Chelsea" />
+
+    <TextView
+        android:id="@+id/tv_Arsenal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:text="Arsenal "
+        android:textColor="#090808"
+        app:layout_constraintBottom_toTopOf="@+id/tv_time18"
+        app:layout_constraintStart_toStartOf="@+id/tv_Chelsea"
+        app:layout_constraintTop_toTopOf="@+id/tv_time18" />
+
+    <TextView
+        android:id="@+id/tv_Chelsea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="18dp"
+        android:text="Chelsea"
+        android:textColor="#050505"
+        app:layout_constraintBottom_toTopOf="@+id/tv_realMadrid"
+        app:layout_constraintStart_toStartOf="@+id/tv_realMadrid" />
+
+    <ImageView
+        android:id="@+id/iv_notibell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="27dp"
+        android:background="#000000"
+        android:foregroundTint="@color/white"
+        android:outlineAmbientShadowColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv_realMadrid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_popup_reminder" />
+
+    <TextView
+        android:id="@+id/tv_time21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21:45"
+        android:textColor="#050505"
+        app:layout_constraintBottom_toTopOf="@+id/tv_getafe"
+        app:layout_constraintEnd_toEndOf="@+id/tv_time18"
+        app:layout_constraintStart_toStartOf="@+id/tv_time18"
+        app:layout_constraintTop_toTopOf="@+id/tv_getafe" />
+
+    <TextView
+        android:id="@+id/tv_realMadrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="69dp"
+        android:text="Real Madrid"
+        android:textColor="#040303"
+        app:layout_constraintBottom_toTopOf="@+id/iv_startCompetitions"
+        app:layout_constraintStart_toEndOf="@+id/tv_time21" />
+
+    <TextView
+        android:id="@+id/tv_getafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Getafe"
+        android:textColor="#0B0909"
+        app:layout_constraintStart_toStartOf="@+id/tv_realMadrid"
+        app:layout_constraintTop_toBottomOf="@+id/tv_realMadrid" />
+
+    <ImageView
+        android:id="@+id/tv_notibell2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:background="#0E0404"
+        app:layout_constraintStart_toStartOf="@+id/iv_notibell"
+        app:layout_constraintTop_toBottomOf="@+id/iv_notibell"
+        app:srcCompat="@android:drawable/ic_popup_reminder" />
+
+    <ImageView
+        android:id="@+id/iv_startCompetitions"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_roma"
+        app:layout_constraintStart_toStartOf="@+id/iv_TeamsStar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/tv_competiotions"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="15dp"
+        android:text="Competitions"
+        android:textColor="#101010"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_notibell3"
+        app:layout_constraintStart_toEndOf="@+id/iv_startCompetitions"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_favComp"
+        android:layout_width="54dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="73dp"
+        android:text="Serie A"
+        android:textColor="#100F0F"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_empoli"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Arsenal"
+        app:layout_constraintStart_toStartOf="@+id/iv_goBackArrow"
+        app:layout_constraintTop_toTopOf="@+id/iv_startCompetitions" />
+
+    <TextView
+        android:id="@+id/tv_time16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:text="16:45"
+        android:textColor="#090909"
+        app:layout_constraintBottom_toTopOf="@+id/tv_fiorentina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_fiorentina" />
+
+    <TextView
+        android:id="@+id/tv_roma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Roma"
+        android:textColor="#0B0A0A"
+        app:layout_constraintBottom_toTopOf="@+id/tv_time16"
+        app:layout_constraintStart_toStartOf="@+id/tv_fiorentina"
+        app:layout_constraintTop_toTopOf="@+id/tv_time16" />
+
+    <TextView
+        android:id="@+id/tv_fiorentina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="19dp"
+        android:text="Fiorentina"
+        android:textColor="#050505"
+        android:textColorHighlight="#050505"
+        app:layout_constraintStart_toEndOf="@+id/tv_time16"
+        app:layout_constraintTop_toTopOf="@+id/iv_notibell3" />
+
+    <ImageView
+        android:id="@+id/iv_notibell3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="67dp"
+        android:background="#050505"
+        app:layout_constraintStart_toEndOf="@+id/tv_fiorentina"
+        app:layout_constraintTop_toBottomOf="@+id/tv_competiotions"
+        app:srcCompat="@android:drawable/ic_popup_reminder" />
+
+    <TextView
+        android:id="@+id/tv_2100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="21:00 "
+        android:textColor="#0B0A0A"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_empoli"
+        app:layout_constraintEnd_toStartOf="@+id/tv_empoli"
+        app:layout_constraintTop_toBottomOf="@+id/tv_empoli" />
+
+    <TextView
+        android:id="@+id/tv_empoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="21dp"
+        android:text="Empoli"
+        android:textColor="#070505"
+        app:layout_constraintStart_toStartOf="@+id/tv_fiorentina"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fiorentina" />
+
+    <TextView
+        android:id="@+id/tv_napoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Napoli"
+        android:textColor="#121111"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_2100"
+        app:layout_constraintEnd_toEndOf="@+id/tv_empoli"
+        app:layout_constraintTop_toBottomOf="@+id/tv_2100" />
+
+    <ImageView
+        android:id="@+id/iv_notibell4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:background="#040303"
+        app:layout_constraintStart_toStartOf="@+id/iv_notibell3"
+        app:layout_constraintTop_toBottomOf="@+id/iv_notibell3"
+        app:srcCompat="@android:drawable/ic_popup_reminder" />
+
+    <ImageView
+        android:id="@+id/iv_goBackArrow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="67dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_greeting"
+        app:layout_constraintEnd_toStartOf="@+id/tv_greeting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_greeting"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
